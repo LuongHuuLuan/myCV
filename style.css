@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hex-box {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 43.3px;
+  /* width * 0.866 */
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  transform: rotate(30deg);
+}
+
+.hex-box-black {
+  background: black;
+}
+
+.hex-box-white {
+  background: white;
+}
+
+.hex-box-bg-left {
+  background: #142336;
+}
+
+.hex-box-bg-right {
+  background: #e6e6e8;
+}
+
+.hex-box-background {
+  position: absolute;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+
+.hex-border {
+  top: 2px;
+  /* equal to border thickness */
+  left: 2px;
+  /* equal to border thickness */
+  width: 46px;
+  /* container height - (border thickness * 2) */
+  height: 39.3px;
+  /* container height - (border thickness * 2) */
+}
+
+.title-icon {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  font-size: 24px;
+  top: 0px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 43.3px !important;
+}
+
+.text-right-color {
+  color: #142336;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #edf0f2;
+  border-radius: 16px;
+}
+
+.ul-progress-bar ul, .ul-progress-bar li {
+  list-style-type: disc;
+}
+.ul-progress-bar ul {
+  overflow: hidden;
+}
+.ul-progress-bar li {
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  margin-left: 30px;
+}
+.ul-progress-bar li::marker {
+  font-size: 28px;
+}
+.ul-progress-bar .progress-bar-skill {
+  position: absolute;
+  top: 12px;
+  right: 15%;
+  width: 130px;
+  height: 10px;
+}
+.ul-progress-bar .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  border: 1px solid #edf0f2;
+  border-radius: 16px;
+  background: #edf0f2;
+}
+
+.ul-list ul, .ul-list li {
+  list-style-type: disc;
+}
+.ul-list ul {
+  overflow: hidden;
+}
+.ul-list li {
+  width: 90%;
+  margin-left: 30px;
+}
+.ul-list li::marker {
+  font-size: 28px;
+}
+.ul-list span {
+  font-weight: 700;
+}
+.ul-list h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.ul-list p {
+  word-wrap: break-word;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+}
+.container .left-content {
+  background: #142336;
+  width: 30%;
+  height: auto;
+  box-sizing: border-box;
+}
+.container .left-content span, .container .left-content p {
+  font-size: 18px;
+}
+.container .left-content span {
+  color: #edf0f2;
+}
+.container .left-content p {
+  margin-left: 16px;
+  word-wrap: break-word;
+  color: #8d8d98;
+}
+.container .session {
+  padding: 16px 0 16px 16px;
+  margin: 16px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .session .session-title {
+  line-height: 50px;
+  color: #edf0f2;
+}
+.container .session .title-name {
+  font-weight: 500;
+  font-size: 20px;
+  margin-right: 16px;
+}
+.container .session .session-title:after {
+  content: "";
+  display: flex;
+  flex: 1 1;
+  border-bottom: 2px solid #ececec;
+  margin: auto;
+}
+.container .session-content {
+  margin: 16px 0;
+}
+.container #avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container #avatar .hex {
+  display: block;
+  margin: 16px auto;
+  position: relative;
+  width: 150px;
+  height: 129.9px;
+  background: #edf0f2;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  transform: rotate(30deg);
+}
+.container #avatar .hex-background {
+  position: absolute;
+  top: 2px;
+  /* equal to border thickness */
+  left: 2px;
+  /* equal to border thickness */
+  width: 146px;
+  height: 125.9px;
+  /* container height - (border thickness * 2) */
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+}
+.container #avatar .hex img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  -moz-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+  transform: rotate(-60deg);
+}
+.container #avatar h1 {
+  font-weight: 500;
+  color: #edf0f2;
+}
+.container #contact p, .container #connect p {
+  align-self: center;
+}
+.container #contact .skill, .container #contact .social, .container #connect .skill, .container #connect .social {
+  display: flex;
+}
+.container #contact .skill + .skill, .container #contact .social + .social, .container #connect .skill + .skill, .container #connect .social + .social {
+  margin-top: 10px;
+}
+.container #personal-skills li {
+  color: #8d8d98;
+}
+.container #personal-skills li::marker {
+  color: #edf0f2;
+}
+.container .right-content {
+  background: #e6e6e8;
+  color: #142336;
+  width: 70%;
+  height: auto;
+  box-sizing: border-box;
+}
+.container .right-content .session-title:after {
+  border-bottom: 2px solid #142336;
+}
+.container .right-content .progress-bar-skill {
+  right: 10%;
+  width: 50%;
+}
+.container .right-content .progress-bar {
+  border: 1px solid #142336;
+}
+.container .right-content .progress {
+  border: 1px solid #142336;
+  background: #142336;
+}
+.container .right-content .ul-progress-bar ul {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+}
+.container .right-content .ul-progress-bar li {
+  flex-basis: 46%;
+  box-sizing: border-box;
+}
+
+.session-title {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
