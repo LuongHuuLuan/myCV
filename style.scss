@@ -3,9 +3,11 @@ $background-right-color: #e6e6e8;
 $text-left-title: #edf0f2;
 $text-left-content: #8d8d98;
 * {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
 }
 
 h1, h2, h3, h4, h5, h6, ul, li, p {
@@ -171,7 +173,12 @@ $borderWidth: 2px;
     width: 30%;
     height: auto;
     box-sizing: border-box;
-
+    .mobile-navbar {
+      display: none;
+    }
+    .close-mobile {
+      display: none;
+    }
     span, p {
       font-size: 18px;
     }
@@ -213,6 +220,9 @@ $borderWidth: 2px;
       margin: auto;
     }
   }
+  .session#avatar {
+    padding: 16px;
+  }
 
   .session-content {
     margin: 16px 0;
@@ -224,7 +234,6 @@ $borderWidth: 2px;
     justify-content: center;
     align-items: center;
 
-    // https://codeconvey.com/css-hexagon-image-with-border/ tham khảo
     $hexWidth: 150px;
     $hexHeight: $hexWidth / 0.866;
     $borderWidth: 2px;

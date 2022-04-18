@@ -1,0 +1,99 @@
+$text-left-title: #edf0f2;
+@media screen and (max-width: 667px) {
+  .container {
+
+    .left-content.hidden {
+      position: fixed;
+      width: 100%;
+      height: 50px;
+      z-index: 3;
+
+      .close-mobile {
+        display: none;
+      }
+
+      .session, #avatar {
+        display: none;
+      }
+
+      .mobile-navbar {
+        display: block;
+        height: 100%;
+        line-height: 50px;
+
+        a {
+          color: $text-left-title;
+          margin-left: 10px;
+          font-size: 25px;
+        }
+
+        i {
+          color: $text-left-title;
+          line-height: 50px;
+          float: right;
+          padding: 4px;
+          margin-right: 10px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .left-content {
+      position: absolute;
+      width: 100%;
+      z-index: 3;
+
+      p {
+        width: 90%;
+      }
+
+      .close-mobile {
+        display: block;
+        position: fixed;
+        z-index: 6;
+        top: 10px;
+        padding: 4px;
+        font-size: 30px;
+        right: 0;
+        color: $text-left-title;
+      }
+    }
+
+    .right-content {
+      width: 100%;
+      margin-top: 50px;
+
+      .ul-progress-bar {
+        li {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .container {
+    .title-icon {
+      margin-right: 3px;
+    }
+    .left-content {
+      width: 40%;
+      p {
+        margin-left: 0;
+      }
+    }
+    #avatar {
+      h1 {
+        font-size: 25px;
+      }
+    }
+    .right-content {
+      width: 60%;
+      .ul-progress-bar {
+        li {
+         flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
