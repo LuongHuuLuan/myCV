@@ -249,6 +249,9 @@ a {
 .container #contact p, .container #connect p {
   align-self: center;
 }
+.container #contact .social a, .container #connect .social a {
+  color: #8d8d98;
+}
 .container #contact .skill, .container #contact .social, .container #connect .skill, .container #connect .social {
   display: flex;
 }

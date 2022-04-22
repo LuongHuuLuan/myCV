@@ -284,6 +284,12 @@ $borderWidth: 2px;
       align-self: center;
     }
 
+    .social {
+
+      a {
+        color: $text-left-content;
+      }
+    }
     .skill, .social {
       display: flex;
     }

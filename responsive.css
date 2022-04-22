@@ -47,6 +47,14 @@
     right: 0;
     color: #edf0f2;
   }
+  @keyframes slideDown {
+    from {
+      top: -100%;
+    }
+    to {
+      top: 0;
+    }
+  }
   .container .right-content {
     width: 100%;
     margin-top: 50px;
